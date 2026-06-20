@@ -1,0 +1,766 @@
+*{
+box-sizing:border-box;
+}
+body{
+margin: 0;
+font-size:16px;
+font-family: arial,helveltica,sans-serif;
+line-height: 1.4em;
+background:#e9e9e9; 
+}
+body.pagina-interna{
+    background: #f4f6fb;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:20px;
+}
+
+.contenedor{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.encabezado{ 
+background: #2c2c2c; 
+overflow: hidden;
+}
+.logo{
+    float: left;
+   position: relative;
+    top: 15px; 
+}
+.encabezado nav{ 
+float: right; 
+}
+.encabezado nav ul{ 
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.encabezado nav ul li{ 
+display: inline-block;
+/*background: red;*/
+margin-right: -4px;
+}
+.encabezado nav ul li a{ 
+display: block;
+color: #fff;
+padding: 28px;
+border-left: 1px solid #696969;
+text-decoration: none;
+}
+/*cambio de color*/
+.encabezado nav ul li a:hover{ 
+background: #575757;
+}
+/*------------------------------------
+PRESENTACION
+-------------------------------------*/ 
+.presentacion{
+  /*background: yellow;*/
+  background: radial-gradient(270px at 75% 15%, #a3d4ff, #0460ad);
+  overflow: hidden;
+  border-bottom: 3px solid #044e8b; 
+}  
+.introduccion-presentacion{
+    float: left;
+    width:60%;
+}
+.introduccion-presentacion h1{
+    color:white;
+    text-align:center;
+    font-size:42px;
+    margin-top:30px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 4px black;
+
+} 
+.introduccion-presentacion h1 span{
+    color: #fff;
+    font-size: 20px; /*42px = 2.62em 16px = ? =0.38*/
+}
+.dato-principal{
+    text-align:center;
+    color:white;
+    font-size:18px;
+    margin-bottom:30px;
+}
+/*------------aprender------------mas*/
+a.aprender-mas{
+    display:block;
+    width:60%;
+    margin:0 auto 40px auto;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    padding:15px;
+    border-radius:10px;
+    background:linear-gradient(#1f8b31,#0d5c25);
+    box-shadow:0 6px 0 #0a421a;
+} 
+a.aprender-mas:hover{
+    box-shadow: 0 0 25px 5px #000;
+}
+.presentacion img{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+/*****************************************************************
+/*------------Acceso-rapido------------*/
+.acceso-rapido{
+    background: #21bc4e;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 16px;
+}
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+   font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a{
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+    text-decoration: none;
+}
+/*---------bloque contenido----------*/
+.bloque-contenido{
+    overflow: hidden; /*2
+    margin-top: 25px; /** complemenatario 6  **/
+}
+.bloque-contenido .contenedor{  /*3**/
+    display: table;  
+}
+.articulos { /** 1 **/
+    /*float: left;  /*elim 3 */
+    background: beige;
+    width: 65%; /*elimi  3*/
+  display: table-cell;  /*3*/
+  padding-right: 30px; /* 4*/
+}
+.articulos article{  /* 10   */
+    margin-bottom: 10px;
+}
+.articulos h2{  /**4**/
+    color: #444444;
+    font-size: 1.625em;
+    border-bottom: 3px solid #0460ad;
+    padding-bottom: 25px;
+}
+.articulos img{  /**5**/
+    float: left;
+    margin-right: 10px;
+    position: relative; /*  10  */
+    top: 5px;           /*   10 */
+}
+.articulos article h1{  /**6**/
+    font-size: 1.25em;  /*20/16 = 1.25em*/
+    /*margin: 0; ** 8  *** quitar 8 poner 9*/
+    margin: 8px 0 8px 0;  /*** 9 ****/
+}
+.articulos article h1 a{  /**7**/ 
+    color: #444444;  /*HTML incluir href*/
+    text-decoration: none;
+}
+.articulos article h1 a:hover{  /**8**/ 
+    text-decoration: underline;
+}
+.articulos article p{  /** 9 **/ 
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em; /*** 14/16 = 0.875 ***/
+}
+.complementario{    /*   1  */
+    background: #0460ad;
+    width: 32%; 
+    display: table-cell; 
+    color: white;
+    padding: 20px; /***2**laterales sup e inf*/
+}
+.complementario h2{   /** 2  **/
+    text-align:center;
+    font-size:32px;
+    border-bottom:2px solid white;
+    padding-bottom:10px;
+}
+.complementario ul{   /** 3  **/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li{ /*** 4 ***/
+    background: none;
+    padding-left: 0;
+    margin-bottom: 8px;
+}
+.complementario li{
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+}
+.complementario ul li a{ /*** 5 ***/
+    color:white;
+    text-decoration: none;
+}
+.complementario ul li a:hover{ /*** 6 ***/
+    color: red;
+    text-decoration: underline; /* ir a bloque-conteniodo*/
+}
+/*---------------------------------
+CONCLUSION
+----------------------------------*/
+
+.conclusion{
+    background:#ffffff;
+    width:980px;
+    margin:20px auto;
+    padding:15px;
+}
+.conclusion h2{
+    color:#0460ad;
+    text-align:center;
+    font-size:28px;
+}
+
+.conclusion p{
+    text-align:justify;
+    font-size:18px;
+}
+/***********************************************************************/
+/************** suscripcion */
+.suscripcion{  /**1***/
+    overflow: hidden;
+    border: 1px solid red;  /**2 *** elim**/
+    background: #eeeeee;   /***2***/
+    margin-top: 0;  /*** 2  B  ****/
+}
+.suscripcion h2{ /***2***/
+    float: left;
+    font-size: 1.625em; /*26/16  */
+    color: #444444;
+    font-weight: normal;
+}
+.suscripcion form{  /***2***/
+    float: right;
+    position: relative; /** 2 a ***/
+    top: 20px;   /***  2  a   ****/
+}
+.suscripcion form input{   /***3  ***/
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+.suscripcion form input[type="submit"]{ /*** 4   ***/
+    border: 1px solid #22314d;
+    padding: 10px;
+    background: #0460ad;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: 0 -1px 0px 0 #93badc insert;
+}
+.suscripcion form input[type="submit"]:hover{ /*** 5   ***/
+    background: #21bc4d;
+}
+/***********pie de pagina**************/
+.piedepagina{   /**1 **/
+    background: #444444;
+    padding: 20px 0; /*** 7  c  */
+}
+.piedepagina .contenedor{   /**2  **/
+    display: table;
+}
+.piedepagina small{  /***3  ***/
+    display: table-cell;
+    background: red;  /*  elim  7 a **/
+    color: #fff;  /** 4 **/
+}
+.piedepagina nav{ /**** 4  ***/
+    display: table-cell;
+    background: blue;  /*** elim 7 b ***/
+    text-align: right; /***6  **/
+}
+.piedepagina nav ul{ /**** 5 ***/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{ /**** 6 ***/
+    display: inline-block;
+    padding-left: 10px;  /** 7  d ****/
+}
+.piedepagina nav ul li a{ /**** 7 ***/
+    color: #fff;
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover{ /**** 7 ***/
+    color: #ffff00;
+    text-decoration: underline;
+}
+/*************Redes sociales***************/
+.social{
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.social a{
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+.social a:hover{
+    opacity: 1;
+}
+.social img{
+    border-radius: 50%;
+    display: block;
+}
+.conclusion .contenedor{
+    width: 1200px;
+}
+.pagina-interna .contenedor{
+    width: 1000px;
+}
+.pagina-interna h2{
+    color: #1f3c88;
+    font-size: 32px;
+    border-bottom: 3px solid #1f3c88;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.pagina-interna .articulos article{
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.pagina-interna .articulos img{
+    border-radius: 10px;
+}
+.pagina-interna .complementario{
+    background: linear-gradient(180deg, #2f5bd6, #1f3c88);
+    border-radius: 12px;
+    color: white;
+}
+.grafica{
+    margin-top: 20px;
+}
+
+.barra{
+    margin-bottom: 15px;
+}
+
+.barra span{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bar{
+    height: 25px;
+    border-radius: 8px;
+    background: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+/* niveles de cada región */
+.africa{
+    width: 90%;
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+}
+
+.asia{
+    width: 70%;
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+}
+
+.latam{
+    width: 55%;
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+}
+
+.europa{
+    width: 40%;
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
+/* ===== ESTILOS PARA PÁGINAS INTERNAS ===== */
+body.pagina-interna {
+    background: #f4f6fb; /* Fondo distinto al inicio */
+}
+
+.pagina-interna .contenedor {
+    width: 1000px; /* Un poco más ancho que el inicio */
+}
+
+.pagina-interna h2 {
+    color: #1f3c88;
+    font-size: 32px;
+    border-bottom: 3px solid #1f3c88;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.pagina-interna .articulos article {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.pagina-interna .articulos img {
+    border-radius: 10px;
+}
+
+.pagina-interna .complementario {
+    background: linear-gradient(180deg, #2f5bd6, #1f3c88);
+    border-radius: 12px;
+    color: white;
+}
+
+/* Corrige el ancho de la conclusión en internas */
+.pagina-interna .conclusion {
+    width: 1000px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+/* ==============================================
+   ESTILOS EXCLUSIVOS PARA: IMPACTO EN LA INFANCIA
+   ============================================== */
+
+/* Fondo de página distinto */
+.pagina-infancia {
+    background-color: #fff8f0 !important; /* Color naranja muy suave */
+}
+
+/* Cambio de colores en la cabecera */
+.pagina-infancia .encabezado {
+    background-color: #b03a2e !important; /* Rojo oscuro / ladrillo */
+}
+.pagina-infancia .encabezado nav ul li a {
+    border-left: 1px solid #e74c3c !important;
+}
+.pagina-infancia .encabezado nav ul li a:hover {
+    background-color: #e74c3c !important; /* Rojo más claro al pasar el mouse */
+}
+
+/* Colores para títulos y bordes */
+.pagina-infancia h2,
+.pagina-infancia .articulos h2 {
+    color: #b03a2e !important;
+    border-bottom: 3px solid #e74c3c !important;
+}
+
+/* Barra lateral con colores propios */
+.pagina-infancia .complementario {
+    background: linear-gradient(180deg, #e67e22, #b03a2e) !important; /* Degradado naranja a rojo */
+}
+
+/* Estilos para las barras de progreso (gráficos) en esta página */
+.pagina-infancia .barra .bar {
+    background-color: #fad7a0 !important; /* Fondo de barra color crema */
+}
+/* Colores específicos para cada dato */
+.pagina-infancia .desnutricion {
+    width: 45%;
+    background: linear-gradient(90deg, #e74c3c, #c0392b) !important;
+}
+.pagina-infancia .mortalidad {
+    width: 60%;
+    background: linear-gradient(90deg, #f39c12, #e67e22) !important;
+}
+.pagina-infancia .desarrollo {
+    width: 75%;
+    background: linear-gradient(90deg, #8e44ad, #9b59b6) !important;
+}
+
+/* Color especial para la conclusión */
+.pagina-infancia .conclusion h2 {
+    color: #b03a2e !important;
+}
+/* ==============================================
+   ESTILOS EXCLUSIVOS PARA: RETOS PARA EL FUTURO
+   ============================================== */
+
+/* Fondo de página distinto */
+.pagina-retos {
+    background-color: #f5f7fa !important; /* Fondo gris muy claro */
+}
+
+/* Cambio de colores en la cabecera */
+.pagina-retos .encabezado {
+    background-color: #2c3e50 !important; /* Azul marino / gris oscuro */
+}
+.pagina-retos .encabezado nav ul li a {
+    border-left: 1px solid #5d6d7e !important;
+}
+.pagina-retos .encabezado nav ul li a:hover {
+    background-color: #34495e !important; /* Tono intermedio al pasar el mouse */
+}
+
+/* Colores para títulos y bordes */
+.pagina-retos h2,
+.pagina-retos .articulos h2 {
+    color: #2c3e50 !important;
+    border-bottom: 3px solid #5d6d7e !important;
+}
+
+/* Barra lateral con colores propios */
+.pagina-retos .complementario {
+    background: linear-gradient(180deg, #4a69bd, #2c3e50) !important; /* Degradado azul a azul oscuro */
+}
+
+/* Estilos para las barras de progreso (gráficos) en esta página */
+.pagina-retos .barra .bar {
+    background-color: #d0d7e2 !important; /* Fondo grisáceo */
+}
+/* Colores específicos para cada dato */
+.pagina-retos .meta-ods {
+    width: 85%;
+    background: linear-gradient(90deg, #6a11cb, #2575fc) !important; /* Morado a azul */
+}
+.pagina-retos .tecnologia {
+    width: 60%;
+    background: linear-gradient(90deg, #3498db, #2ecc71) !important; /* Azul a verde */
+}
+.pagina-retos .adaptacion {
+    width: 50%;
+    background: linear-gradient(90deg, #f1c40f, #e67e22) !important; /* Amarillo a naranja */
+}
+
+/* Color especial para la conclusión */
+.pagina-retos .conclusion h2 {
+    color: #2c3e50 !important;
+}
+/* ==============================================
+   ESTILOS EXCLUSIVOS PARA: PANORAMA GLOBAL
+   ============================================== */
+
+/* Fondo de página limpio y claro */
+.pagina-panorama {
+    background-color: #f8f9fa !important;
+}
+
+/* Cabecera con color azul rey, muy corporativo */
+.pagina-panorama .encabezado {
+    background-color: #154360 !important;
+}
+.pagina-panorama .encabezado nav ul li a {
+    border-left: 1px solid #5499c7 !important;
+}
+.pagina-panorama .encabezado nav ul li a:hover {
+    background-color: #1f618d !important;
+}
+
+/* Títulos y bordes a juego */
+.pagina-panorama h2,
+.pagina-panorama .articulos h2 {
+    color: #154360 !important;
+    border-bottom: 3px solid #5499c7 !important;
+}
+
+/* Barra lateral con degradado azul elegante */
+.pagina-panorama .complementario {
+    background: linear-gradient(180deg, #2874a6, #154360) !important;
+}
+
+/* 🎨 ESTILOS PARA LOS CÍRCULOS DE ESTADÍSTICAS 🎨 */
+.pagina-panorama .graficos-circulo {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin: 20px 0;
+}
+
+.pagina-panorama .contenedor-circulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagina-panorama .circulo-item {
+    width: 120px;
+}
+
+.pagina-panorama .circulo-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #154360;
+    font-size: 15px;
+    text-align: center !important;
+}
+
+/* Color conclusión */
+.pagina-panorama .conclusion h2 {
+    color: #154360 !important;
+}
+/* ==============================================
+   ESTILOS EXCLUSIVOS PARA: CONTEXTO (CORREGIDO)
+   ============================================== */
+
+/* Fondo con tono cálido y antiguo */
+.pagina-contexto {
+    background-color: #fdf6ee !important;
+}
+
+/* Cabecera con colores café/marrón elegante */
+.pagina-contexto .encabezado {
+    background-color: #6E2C00 !important;
+}
+.pagina-contexto .encabezado nav ul li a {
+    border-left: 1px solid #B07D62 !important;
+}
+.pagina-contexto .encabezado nav ul li a:hover {
+    background-color: #92400E !important;
+}
+
+/* Títulos con color café oscuro */
+.pagina-contexto h2,
+.pagina-contexto .articulos h2 {
+    color: #6E2C00 !important;
+    border-bottom: 3px solid #CA6F1E !important;
+}
+
+/* Barra lateral con degradado café/dorado */
+.pagina-contexto .complementario {
+    background: linear-gradient(180deg, #A04000, #6E2C00) !important;
+}
+
+/* ✨ LÍNEA DE TIEMPO - VERSIÓN ARREGLADA Y ALINEADA ✨ */
+.pagina-contexto .linea-tiempo {
+    position: relative;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(110, 44, 0, 0.08);
+    margin: 20px 0;
+}
+
+/* La línea vertical central - AHORA MÁS A LA IZQUIERDA Y BIEN UBICADA */
+.pagina-contexto .linea-tiempo::before {
+    content: '';
+    position: absolute;
+    left: 30px;  /* <<<--- MUÉVO LA LÍNEA HACIA LA IZQUIERDA */
+    top: 50px;
+    bottom: 30px;
+    width: 4px;
+    background: linear-gradient(180deg, #CA6F1E, #6E2C00);
+    border-radius: 2px;
+}
+
+.pagina-contexto .tiempo-item {
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 70px; /* <<<--- ESPACIO SUFICIENTE PARA QUE NO TOQUE LA LÍNEA */
+}
+
+/* El punto de la línea - AHORA ALINEADO CON LA LÍNEA */
+.pagina-contexto .tiempo-item::before {
+    content: '';
+    position: absolute;
+    left: 22px;  /* <<<--- PUNTO PEGADO A LA LÍNEA */
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    background-color: #F39C12;
+    border: 4px solid #6E2C00;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 4px rgba(144, 89, 32, 0.15);
+}
+
+/* Resaltar el punto actual */
+.pagina-contexto .tiempo-item.actual::before {
+    background-color: #F1C40F;
+    width: 22px;
+    height: 22px;
+    left: 20px;
+    top: 4px;
+}
+
+/* Estilo para el año - AHORA NO SE CRUZA NI SE CORTA */
+.pagina-contexto .anio {
+    position: relative; /* <<<--- CAMBIO DE ABSOLUTO A RELATIVO PARA QUE NO SE SALGA */
+    display: inline-block;
+    font-weight: bold;
+    color: #6E2C00;
+    font-size: 16px;
+    background-color: #FDEBD0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #F0B27A;
+    margin-bottom: 8px; /* <<<--- SEPARACIÓN DEL TEXTO */
+}
+
+.pagina-contexto .descripcion h3 {
+    margin: 0 0 5px 0;
+    color: #A04000;
+    font-size: 17px;
+}
+
+.pagina-contexto .descripcion p {
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5em; /* <<<--- ESPACIO ENTRE LÍNEAS PARA QUE SE VEA MEJOR */
+}
+
+/* 📊 ESTILOS PARA LOS CÍRCULOS DE ESTADÍSTICAS 📊 */
+.pagina-contexto .graficos-circulo {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(110, 44, 0, 0.08);
+    margin: 20px 0;
+}
+
+.pagina-contexto .contenedor-circulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagina-contexto .circulo-item {
+    width: 120px;
+}
+
+.pagina-contexto .circulo-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #6E2C00;
+    font-size: 15px;
+    text-align: center !important;
+}
+
+/* Color conclusión */
+.pagina-contexto .conclusion h2 {
+    color: #6E2C00 !important;
+}

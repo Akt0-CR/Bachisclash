@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panorama Global | Proyecto Hambruna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Este código es necesario para que funcionen los círculos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+</head>
+<body class="pagina-interna pagina-panorama">
+ <header class="encabezado" role="banner">
+ 	<div class="contenedor">
+ 		<a href="index.html" class="logo">
+ 			<img src="imagen/titulo.jpg" alt="logotipo del proyecto">
+ 		</a>
+ 		<nav role ="navigation">
+ 			<ul>
+ 				<li><a href="index.html">Inicio</a></li>
+ 				<li><a href="seguridad-alimentaria.html">Seguridad Alimentaria</a></li>
+ 				<li><a href="impacto-infancia.html">Impacto en la Infancia</a></li>
+ 				<li><a href="retos-futuro.html">Retos Futuros</a></li>
+                <li><a href="panorama-global.html">Panorama Global</a></li>
+ 			</ul>
+ 		</nav>
+ 	</div>
+ </header>
+
+ 	<div class="bloque-contenido">
+ 		<div class="contenedor">
+ 			<main class="articulos" role="main">
+ 				<h2>Panorama Global de la Hambruna</h2>
+ 				<article>
+ 					<img src="imagen/causa.png" alt="Mapa mundial" width="150">
+ 					<h1>La situación en números y regiones</h1>
+ 					<p>El panorama mundial muestra que el hambre sigue siendo un reto enorme. Según los últimos informes de la FAO y el Programa Mundial de Alimentos, más de **733 millones de personas** sufren desnutrición crónica. Aunque en algunas regiones de América del Sur y Asia la situación ha mejorado levemente, en África y partes de Oriente Medio los números van en aumento debido a conflictos y crisis climáticas.</p>
+                    <p>En 2024, el 8.2% de la población mundial estaba subalimentada. Parece un porcentaje pequeño, pero significa millones de vidas afectadas. La inseguridad alimentaria grave o moderada afecta ya al 28% de la población mundial, lo que indica que casi 1 de cada 3 personas tiene dificultades para comer todos los días.</p>
+ 				</article>
+
+ 				<article>
+ 					<img src="imagen/problema.jpg" alt="Factores globales" width="150">
+ 					<h1>Regiones más afectadas</h1>
+ 					<p>África es la región más crítica: cerca del 20% de su población sufre hambre. Le siguen Asia y Oceanía, donde las cifras son altas por la gran densidad de población. En América Latina y el Caribe el problema ha crecido por la inflación y crisis económicas recientes.</p>
+                    <p>Los focos de hambruna declarada se encuentran en zonas de conflicto activo: Gaza, Sudán, Yemen, Somalia y partes de la República Democrática del Congo. En estos lugares, la gente no tiene forma de producir ni comprar alimentos, y la ayuda humanitaria es difícil de entregar.</p>
+ 				</article>
+
+                <!-- 🔴 AQUÍ ESTÁN LOS CÍRCULOS DE ESTADÍSTICAS 🔴 -->
+                <article class="graficos-circulo">
+                    <h1>Porcentajes de afectación mundial</h1>
+                    <div class="contenedor-circulos">
+                        <div class="circulo-item">
+                            <canvas id="circulo1"></canvas>
+                            <p>África<br><strong>20%</strong></p>
+                        </div>
+                        <div class="circulo-item">
+                            <canvas id="circulo2"></canvas>
+                            <p>Asia<br><strong>12%</strong></p>
+                        </div>
+                        <div class="circulo-item">
+                            <canvas id="circulo3"></canvas>
+                            <p>Latinoamérica<br><strong>8.5%</strong></p>
+                        </div>
+                        <div class="circulo-item">
+                            <canvas id="circulo4"></canvas>
+                            <p>Europa<br><strong>2.5%</strong></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h1>Tendencia actual</h1>
+                    <p>Después de años de avance reduciendo el hambre, desde 2020 la tendencia se ha revertido. La pandemia, las guerras y el cambio climático han hecho que volvamos a niveles de hace 15 años. Para llegar a la meta de "Hambre Cero" en 2030, el mundo necesita duplicar el ritmo de ayuda y cambios estructurales, o más de 600 millones de personas seguirán sufriendo hambre en esa fecha.</p>
+                </article>
+ 			</main>
+
+            <aside class="complementario" role="complementary">
+                <h2>Datos Generales</h2>
+                <ul>
+                    <li>🌍 318 millones en situación de hambre aguda.</li>
+                    <li>⚔️ 68 países con crisis alimentaria grave.</li>
+                    <li>📉 Disminución del hambre: del 8.7% (2022) al 8.2% (2024).</li>
+                    <li>👶 22 millones de niños con desnutrición severa.</li>
+                    <li>💰 El costo de erradicar el hambre es menor al 1% del PIB mundial.</li>
+                </ul>
+
+                <h2>Clasificación</h2>
+                <ul>
+                    <li>🔴 <strong>Hambruna:</strong> Mortalidad por falta de alimento.</li>
+                    <li>🟠 <strong>Crítico:</strong> Escasez severa y desnutrición.</li>
+                    <li>🟡 <strong>Emergencia:</strong> Falta de acceso regular a comida.</li>
+                    <li>🟢 <strong>Estable:</strong> Acceso garantizado.</li>
+                </ul>
+            </aside>
+     </div>
+ 	</div> 
+
+    <section class="conclusion" id="conclusion">
+     <h2>Conclusión</h2>
+        <p>El panorama global nos muestra que el problema es mundial y creciente. No es solo cuestión de producción, sino de distribución, paz y economía. Los números nos alertan: si no actuamos de forma coordinada, el hambre será una de las mayores crisis del siglo XXI. Conocer la realidad es el primer paso para cambiarla y asegurar que nadie se quede atrás.</p>
+    </section>
+
+<section class="suscripcion">
+    <div class="contenedor">
+        <h2>Mantente Informado</h2>
+        <form action="#">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required>
+            <input type="email" name="email" placeholder="Ingresa tu correo..." required>
+            <input type="submit" name="valor" value="Registrate">
+        </form>
+    </div>
+</section>
+
+<footer class="piedepagina" role="contentinfo">
+    <div class="contenedor">
+        <small>© 2026 Proyecto Educativo: Hambruna Económica | Panorama Global</small>
+        <nav>
+            <ul>
+                <li><a href="#">Politicas del sitio</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<!-- 🚀 SCRIPT PARA QUE LOS CÍRCULOS SE VEAN INCREÍBLES -->
+<script>
+// Código para dibujar los círculos
+const config = {
+  type: 'doughnut', // Esto hace que sean círculos con hueco en medio
+  data: {
+    datasets: [{
+      backgroundColor: ['#2980b9', '#3498db', '#5dade2', '#aed6f1'],
+      borderWidth: 0,
+      borderRadius: 10
+    }]
+  },
+  options: {
+    cutout: '70%', // Que tan grueso es el círculo
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { enabled: false }
+    },
+    animation: {
+        animateRotate: true, // Animación al cargar
+        duration: 1500
+    }
+  }
+};
+
+// Circulo 1 - África
+new Chart(document.getElementById('circulo1'), {
+  ...config,
+  data: { datasets: [{ ...config.data.datasets[0], data: [20, 80] }] }
+});
+
+// Circulo 2 - Asia
+new Chart(document.getElementById('circulo2'), {
+  ...config,
+  data: { datasets: [{ ...config.data.datasets[0], data: [12, 88] }] }
+});
+
+// Circulo 3 - Latinoamérica
+new Chart(document.getElementById('circulo3'), {
+  ...config,
+  data: { datasets: [{ ...config.data.datasets[0], data: [8.5, 91.5] }] }
+});
+
+// Circulo 4 - Europa
+new Chart(document.getElementById('circulo4'), {
+  ...config,
+  data: { datasets: [{ ...config.data.datasets[0], data: [2.5, 97.5] }] }
+});
+</script>
+
+</body>
+</html>

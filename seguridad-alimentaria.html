@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seguridad Alimentaria | Proyecto Hambruna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* ESTILOS EXCLUSIVOS DE ESTA PÁGINA */
+        body.pagina-interna {
+            background-color: #f0f9f4; /* Fondo verde muy claro */
+        }
+        /* Cabecera con color propio */
+        .encabezado {
+            background: #16a085; /* Verde turquesa principal */
+        }
+        .encabezado nav ul li a {
+            border-left: 1px solid #48c9b0;
+        }
+        .encabezado nav ul li a:hover {
+            background: #1abc9c; /* Tono más claro al pasar el mouse */
+        }
+        /* Títulos y bordes */
+        .pagina-interna h2 {
+            color: #16a085;
+            border-bottom: 3px solid #16a085;
+        }
+        /* Barra lateral con degradado propio */
+        .pagina-interna .complementario {
+            background: linear-gradient(180deg, #16a085, #1abc9c);
+        }
+        /* Colores para gráficos de barras */
+        .barra .bar {
+            background: #e0f2f1;
+        }
+        .global { width: 82%; background: linear-gradient(90deg, #27ae60, #2ecc71); }
+        .acceso { width: 65%; background: linear-gradient(90deg, #2980b9, #3498db); }
+        .estabilidad { width: 48%; background: linear-gradient(90deg, #8e44ad, #9b59b6); }
+    </style>
+</head>
+<body class="pagina-interna">
+ <header class="encabezado" role="banner">
+ 	<div class="contenedor">
+ 		<a href="index.html" class="logo">
+ 			<img src="imagen/titulo.jpg" alt="logotipo del proyecto">
+ 		</a>
+ 		<nav role ="navigation">
+ 			<ul>
+ 				<li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+ 				<li><a href="seguridad-alimentaria.html">Seguridad Alimentaria</a></li>
+ 				<li><a href="impacto-infancia.html">Impacto en la Infancia</a></li>
+ 				<li><a href="retos-futuro.html">Retos Futuros</a></li>
+ 			</ul>
+ 		</nav>
+ 	</div>
+ </header>
+
+ 	<div class="bloque-contenido">
+ 		<div class="contenedor">
+ 			<main class="articulos" role="main">
+ 				<h2>Seguridad Alimentaria en el Mundo</h2>
+ 				<article>
+ 					<img src="imagen/causa.png" alt="Acceso a alimentos" width="150">
+ 					<h1>¿Qué significa realmente?</h1>
+ 					<p>La seguridad alimentaria existe cuando todas las personas tienen acceso físico, social y económico a alimentos suficientes, seguros y nutritivos para satisfacer sus necesidades dietéticas y preferencias alimentarias, y llevar una vida activa y saludable. No es solo que haya comida, sino que se pueda acceder a ella en cualquier momento.</p>
+                    <p>Según datos de la FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura), en el año 2024, el <strong>28% de la población mundial</strong> sufrió inseguridad alimentaria moderada o grave. Esto significa que millones de personas no tienen garantizada su alimentación día a día.</p>
+ 				</article>
+
+ 				<article>
+ 					<img src="imagen/problema.jpg" alt="Factores de riesgo" width="150">
+ 					<h1>Factores que ponen en riesgo la seguridad</h1>
+ 					<p>Los conflictos son la causa principal de la crisis actual: expulsan a las personas de sus tierras, rompen las cadenas de suministro y aumentan los precios. Le siguen los fenómenos climáticos extremos —sequías, inundaciones o olas de calor— que destruyen cosechas y medios de vida. A esto se suma la desigualdad económica: cuando los precios suben, las familias más pobres son las primeras en sufrir.</p>
+                    <p>Se estima que cerca del 30% de los alimentos producidos en el mundo se pierde o desperdicia cada año, lo cual agrava aún más la situación global.</p>
+ 				</article>
+
+                <article class="grafica">
+                    <h1>Niveles de seguridad alimentaria</h1>
+                    <div class="barra">
+                        <span>Seguridad a nivel Global</span>
+                        <div class="bar global"></div>
+                    </div>
+                    <div class="barra">
+                        <span>Acceso económico a alimentos</span>
+                        <div class="bar acceso"></div>
+                    </div>
+                    <div class="barra">
+                        <span>Estabilidad de suministros</span>
+                        <div class="bar estabilidad"></div>
+                    </div>
+                </article>
+ 			</main>
+
+            <aside class="complementario" role="complementary">
+                <h2>Datos Clave</h2>
+                <ul>
+                    <li>318 millones de personas sufren hambre aguda en 68 países.</li>
+                    <li>El objetivo de la ONU es reducir el hambre a cero para el año 2030.</li>
+                    <li>La pérdida de alimentos ocurre tanto en la cosecha como en el desperdicio en hogares.</li>
+                    <li>Las zonas rurales son las más vulnerables ante la falta de recursos.</li>
+                </ul>
+
+                <h2>Dimensiones</h2>
+                <ul>
+                    <li>Disponibilidad: Que haya alimentos suficientes.</li>
+                    <li>Acceso: Poder comprarlos o conseguirlos.</li>
+                    <li>Utilización: Buena nutrición e higiene.</li>
+                    <li>Estabilidad: Tenerlo siempre, no solo a veces.</li>
+                </ul>
+            </aside>
+     </div>
+ 	</div> 
+
+    <section class="conclusion" id="conclusion">
+     <h2>Conclusión</h2>
+        <p>Garantizar la seguridad alimentaria es una responsabilidad global. No basta con producir más comida; es necesario asegurar que llegue a quienes la necesitan, estabilizar los precios, proteger a los agricultores y cuidar el medio ambiente. Es la base para terminar con la hambruna económica y construir sociedades más justas y saludables.</p>
+    </section>
+
+<section class="suscripcion">
+    <div class="contenedor">
+        <h2>Mantente Informado</h2>
+        <form action="#">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required>
+            <input type="email" name="email" placeholder="Ingresa tu correo..." required>
+            <input type="submit" name="valor" value="Registrate">
+        </form>
+    </div>
+</section>
+
+<footer class="piedepagina" role="contentinfo">
+    <div class="contenedor">
+        <small>© 2026 Proyecto Educativo: Hambruna Económica | Seguridad Alimentaria</small>
+        <nav>
+            <ul>
+                <li><a href="#">Politicas del sitio</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

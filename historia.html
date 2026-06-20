@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es" class="pagina-interna">
+<head> 
+	<meta charset="UTF-8">
+	<title>Historia de la Hambruna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos exclusivos para esta página */
+        body.pagina-interna{
+            background: #fff9f2; /* Fondo color crema */
+        }
+        .encabezado{
+            background: #5c3a21; /* Marrón oscuro */
+            border-bottom: 3px solid #9c6644;
+        }
+        .presentacion{
+            background: radial-gradient(250px at 75% 15%, #e6b88a, #9c6644);
+            border-bottom: 3px solid #5c3a21;
+        }
+        .introduccion-presentacion h1{
+            text-shadow: 2px 2px 4px #2c1a0e;
+        }
+        a.aprender-mas{
+            background:linear-gradient(#b46c2f, #7c4a24);
+            box-shadow:0 6px 0 #5c3a21;
+        }
+        .articulos h2{
+            color: #5c3a21;
+            border-bottom: 3px solid #9c6644;
+        }
+        .complementario{
+            background: linear-gradient(180deg, #b46c2f, #5c3a21);
+        }
+        .conclusion{
+            background: #ffffff;
+            border-left: 5px solid #9c6644;
+            border-right: 5px solid #9c6644;
+        }
+        /* Estilo para la línea de tiempo */
+        .linea-tiempo {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .evento {
+            padding: 10px 20px;
+            background: #f3e0cc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #9c6644;
+        }
+        .evento h3 {
+            color: #5c3a21;
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+ <header class="encabezado" role="banner">
+ 	<div class="contenedor">
+ 		<a href="index.html" class="logo">
+ 			<img src="imagen/titulo.jpg" alt="logotipo del proyecto">
+ 		</a>
+ 		<nav role ="navigation">
+ 			<ul>
+ 				<li><a href="index.html">Inicio</a></li>
+ 				<li><a href="historia.html">Historia</a></li>
+ 				<li><a href="seguridad-alimentaria.html">Seguridad Alimentaria</a></li>
+ 				<li><a href="impacto-infancia.html">Impacto en la Infancia</a></li>
+ 				<li><a href="retos-futuro.html">Retos Futuros</a></li>
+ 			</ul>
+ 		</nav>
+ 	</div>
+ </header>
+
+ <div class="presentacion">
+ 	<div class="contenedor">
+ 		<div class="introduccion-presentacion">
+ 			<h1>HISTORIA DE LA HAMBRUNA <br><span>Un recorrido por la humanidad</span></h1>
+            <p class="dato-principal">
+                Desde tiempos antiguos hasta la actualidad, el hambre ha marcado el curso de la historia humana.
+            </p>
+ 			<a href="#contenido" class="aprender-mas">Ver historia</a>
+ 		</div>
+ 		<img src="imagen/logo.png" alt="historia del hambre">
+ 	</div>
+ </div> 
+
+ 	<div class="bloque-contenido" id="contenido">
+ 		<div class="contenedor">
+ 			<main class="articulos" role="main">
+ 				<h2>La evolución del hambre</h2>
+ 				<article>
+ 					<img src="imagen/causa.png" alt="épocas antiguas">
+ 					<h1>Épocas antiguas y medias</h1>
+ 					<p>En las primeras civilizaciones, la supervivencia dependía totalmente de las cosechas. Sequías, inundaciones o guerras provocaban hambrunas que diezmaban poblaciones enteras. En la Edad Media, las malas cosechas combinadas con epidemias causaron crisis alimentarias profundas que cambiaron el rumbo de imperios y sociedades.</p>
+ 				</article>
+
+                <h2>Línea del tiempo: Eventos clave</h2>
+                <div class="linea-tiempo">
+                    <div class="evento">
+                        <h3>1845 - 1849: La hambruna irlandesa</h3>
+                        <p>La enfermedad de la papa provocó la muerte de más de un millón de personas y la migración de otro millón, marcando un antes y un después en la conciencia mundial sobre el hambre.</p>
+                    </div>
+                    <div class="evento">
+                        <h3>1921 - 1922: Hambruna en Rusia</h3>
+                        <p>Debido a la guerra civil y sequías, más de 5 millones de personas murieron. Aquí nació la ayuda humanitaria internacional organizada tal como la conocemos.</p>
+                    </div>
+                    <div class="evento">
+                        <h3>1984 - 1985: Etiopía</h3>
+                        <p>Imágenes impactantes llegaron al mundo, movilizando campañas globales y concienciando sobre la relación directa entre conflicto, clima y hambruna.</p>
+                    </div>
+                </div>
+
+ 				<article>
+ 					<h1>La historia reciente</h1>
+ 					<p>En el siglo XX y XXI, el hambre cambió de forma: ya no es solo por desastres naturales, sino consecuencia de conflictos armados, crisis económicas y desigual distribución de recursos. Aunque hoy se produce suficiente alimento para todos, la injusta distribución deja a millones desprotegidos. Organismos como la ONU, FAO y PMA nacieron precisamente para evitar que la historia se repita.</p>
+ 				</article>
+ 			</main>
+
+            <aside class="complementario" role="complementary">
+         <h2>Datos Históricos</h2>
+         <ul>
+            <li><a href="#">El hambre como motor de migraciones</a></li>
+            <li><a href="#">Inicios de la ayuda internacional</a></li>
+            <li><a href="#">Hambrunas y cambios políticos</a></li>
+            <li><a href="#">Avances científicos en agricultura</a></li>
+         </ul>
+         <h2>Hechos Clave</h2>
+            <ul>
+                <li>El hambre ha causado más muertes que las guerras en la historia.</li>
+                <li>En el siglo XIX el 50% de la población sufría desnutrición.</li>
+                <li>La Revolución Verde aumentó la producción un 200%.</li>
+                <li>Hoy el problema es acceso, no falta de producción.</li>
+            </ul>
+      </aside>
+     </div>
+ 	</div> 
+
+<section class="conclusion" id="conclusion">
+    <div class="contenedor">
+     <h2>Lecciones del pasado</h2>
+        <p>
+            La historia nos enseña que el hambre no es inevitable, sino consecuencia de decisiones humanas, organización social y relación con el medio ambiente. Conocer nuestro pasado es fundamental para construir un futuro donde nadie pase hambre.
+        </p>
+    </div>
+</section>
+
+<footer class="piedepagina" role="contentinfo">
+    <div class="contenedor">
+        <small>© 2026 Proyecto Educativo: Hambruna Económica - Historia</small>
+        <nav>
+            <ul>
+                <li><a href="#">Politicas del sitio</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contexto Histórico y Actual | Proyecto Hambruna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Librería para los gráficos circulares -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+</head>
+<body class="pagina-interna pagina-contexto">
+ <header class="encabezado" role="banner">
+ 	<div class="contenedor">
+ 		<a href="index.html" class="logo">
+ 			<img src="imagen/titulo.jpg" alt="logotipo del proyecto">
+ 		</a>
+ 		<nav role ="navigation">
+ 			<ul>
+ 				<li><a href="index.html">Inicio</a></li>
+ 				<li><a href="seguridad-alimentaria.html">Seguridad Alimentaria</a></li>
+ 				<li><a href="impacto-infancia.html">Impacto en la Infancia</a></li>
+ 				<li><a href="retos-futuro.html">Retos Futuros</a></li>
+                <li><a href="panorama-global.html">Panorama Global</a></li>
+                <li><a href="contexto.html">Contexto</a></li>
+ 			</ul>
+ 		</nav>
+ 	</div>
+ </header>
+
+ 	<div class="bloque-contenido">
+ 		<div class="contenedor">
+ 			<main class="articulos" role="main">
+ 				<h2>Contexto: Pasado, Presente y Evolución</h2>
+ 				<article>
+ 					<img src="imagen/causa.png" alt="Antecedentes históricos" width="150">
+ 					<h1>¿Cómo llegamos hasta aquí?</h1>
+ 					<p>El hambre no es un problema nuevo, pero su contexto ha cambiado radicalmente. Durante siglos, las hambrunas estaban ligadas casi exclusivamente a desastres naturales: sequías, inundaciones o plagas que destruían las cosechas. Sin embargo, en el siglo XX y especialmente en el XXI, el contexto ha cambiado: hoy el hambre es, en su mayoría, un problema creado por el ser humano.</p>
+                    <p>La evolución demográfica, la industrialización de la agricultura, las guerras mundiales y las crisis económicas han transformado la forma en que se produce, distribuye y consume la comida. Pasamos de una agricultura de subsistencia a un mercado globalizado, donde los alimentos son mercancías y no solo un recurso vital.</p>
+ 				</article>
+
+ 				<!-- ⏳ SECCIÓN CREATIVA: LÍNEA DE TIEMPO ⏳ -->
+ 				<article class="linea-tiempo">
+ 					<h1>Línea del tiempo: Evolución del problema</h1>
+                    <div class="tiempo-item">
+                        <div class="anio">1940 - 1970</div>
+                        <div class="descripcion">
+                            <h3>Revolución Verde</h3>
+                            <p>Se introducen nuevas tecnologías, fertilizantes y semillas. La producción mundial aumenta drásticamente. Se creen que el hambre se terminaría por exceso de producción, pero la distribución no mejora igual.</p>
+                        </div>
+                    </div>
+                    <div class="tiempo-item">
+                        <div class="anio">1980 - 2000</div>
+                        <div class="descripcion">
+                            <h3>Globalización y Ajustes</h3>
+                            <p>Las economías se abren. La agricultura se enfoca en cultivos de exportación en lugar de alimentos locales. Aparecen las primeras crisis alimentarias modernas ligadas a deudas y políticas económicas.</p>
+                        </div>
+                    </div>
+                    <div class="tiempo-item">
+                        <div class="anio">2008 - 2019</div>
+                        <div class="descripcion">
+                            <h3>Crisis de Precios y Estancamiento</h3>
+                            <p>Suben los precios de los alimentos a niveles históricos. El hambre comienza a subir nuevamente tras décadas de bajada. El cambio climático empieza a ser reconocido como un factor clave.</p>
+                        </div>
+                    </div>
+                    <div class="tiempo-item actual">
+                        <div class="anio">2020 - Actualidad</div>
+                        <div class="descripcion">
+                            <h3>La Crisis Múltiple</h3>
+                            <p>Pandemia, conflictos geopolíticos y crisis climática se combinan. El hambre aumenta a un ritmo que no se veía hace 30 años. La ayuda humanitaria es insuficiente ante la escala del problema.</p>
+                        </div>
+                    </div>
+ 				</article>
+
+                <article>
+ 					<img src="imagen/problema.jpg" alt="Contexto actual" width="150">
+ 					<h1>El contexto actual</h1>
+ 					<p>Hoy vivimos en un mundo paradójico: se produce suficiente comida para alimentar a toda la población mundial, sin embargo, el hambre persiste y crece. El contexto actual está definido por tres grandes pilares: <strong>Economía</strong> (el costo de vida y los precios de los alimentos), <strong>Conflictos</strong> (la guerra es la causa #1 del hambre aguda) y <strong>Medio Ambiente</strong> (la tierra produce menos por el cambio climático).</p>
+                    <p>Además, la desigualdad juega un papel central: mientras en algunas regiones se desperdicia hasta el 40% de la comida, en otras la gente no tiene acceso ni a lo básico. Entender este contexto es vital para no buscar soluciones del pasado a problemas nuevos.</p>
+ 				</article>
+
+                <!-- 📊 GRÁFICOS CIRCULARES TEMÁTICOS 📊 -->
+                <article class="graficos-circulo">
+                    <h1>Distribución de causas en el contexto actual</h1>
+                    <div class="contenedor-circulos">
+                        <div class="circulo-item">
+                            <canvas id="causa1"></canvas>
+                            <p>Conflictos<br><strong>55%</strong></p>
+                        </div>
+                        <div class="circulo-item">
+                            <canvas id="causa2"></canvas>
+                            <p>Clima<br><strong>25%</strong></p>
+                        </div>
+                        <div class="circulo-item">
+                            <canvas id="causa3"></canvas>
+                            <p>Economía<br><strong>20%</strong></p>
+                        </div>
+                    </div>
+                </article>
+
+ 			</main>
+
+            <aside class="complementario" role="complementary">
+                <h2>Puntos Clave del Contexto</h2>
+                <ul>
+                    <li>🔄 De desastres naturales a crisis humanas.</li>
+                    <li>🌐 Producción suficiente, acceso desigual.</li>
+                    <li>⚖️ La pobreza es la raíz estructural.</li>
+                    <li>📈 Tendencia al alza desde 2020.</li>
+                    <li>🏛️ Las políticas globales definen el resultado.</li>
+                </ul>
+
+                <h2>Factores Determinantes</h2>
+                <ul>
+                    <li>💰 Especulación en precios de alimentos.</li>
+                    <li>🌾 Uso de tierras para biocombustibles en lugar de comida.</li>
+                    <li>🚚 Rompimiento de cadenas de suministro.</li>
+                    <li>👥 Crecimiento urbano acelerado.</li>
+                    <li>📉 Deuda externa de países en desarrollo.</li>
+                </ul>
+
+                <h2>El problema hoy</h2>
+                <p style="text-align:center; font-size:14px; margin-top:10px;">
+                    Ya no es solo <br>
+                    <strong style="font-size:20px;">¿Hay comida?</strong><br>
+                    Ahora la pregunta es <br>
+                    <strong style="font-size:20px;">¿Quién puede pagarla?</strong>
+                </p>
+            </aside>
+     </div>
+ 	</div> 
+
+    <section class="conclusion" id="conclusion">
+     <h2>Conclusión</h2>
+        <p>El contexto nos enseña que el hambre actual no es falta de recursos, sino un fallo de organización, justicia y visión global. Entender su historia y cómo han cambiado sus causas es indispensable para no repetir errores. Para solucionarlo, no basta con producir más; hay que cambiar el sistema, las reglas del comercio y la forma en que la sociedad valora el alimento como un derecho humano fundamental y no como una mercancía.</p>
+    </section>
+
+<section class="suscripcion">
+    <div class="contenedor">
+        <h2>Mantente Informado</h2>
+        <form action="#">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required>
+            <input type="email" name="email" placeholder="Ingresa tu correo..." required>
+            <input type="submit" name="valor" value="Registrate">
+        </form>
+    </div>
+</section>
+
+<footer class="piedepagina" role="contentinfo">
+    <div class="contenedor">
+        <small>© 2026 Proyecto Educativo: Hambruna Económica | Contexto</small>
+        <nav>
+            <ul>
+                <li><a href="#">Politicas del sitio</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<!-- 🚀 SCRIPT PARA LOS GRÁFICOS -->
+<script>
+const configContexto = {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      backgroundColor: ['#922B21', '#B7950B', '#873600'], // Colores: Rojo, Dorado, Café
+      borderWidth: 0,
+      borderRadius: 5
+    }]
+  },
+  options: {
+    cutout: '65%',
+    responsive: true,
+    plugins: { legend: { display: false }},
+    animation: { animateRotate: true, duration: 1800 }
+  }
+};
+
+// Gráfico 1: Conflictos
+new Chart(document.getElementById('causa1'), {
+  ...configContexto,
+  data: { datasets: [{ ...configContexto.data.datasets[0], data: [55, 45] }] }
+});
+// Gráfico 2: Clima
+new Chart(document.getElementById('causa2'), {
+  ...configContexto,
+  data: { datasets: [{ ...configContexto.data.datasets[0], data: [25, 75] }] }
+});
+// Gráfico 3: Economía
+new Chart(document.getElementById('causa3'), {
+  ...configContexto,
+  data: { datasets: [{ ...configContexto.data.datasets[0], data: [20, 80] }] }
+});
+</script>
+
+</body>
+</html>
